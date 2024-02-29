@@ -10,16 +10,17 @@
   },
   "dependencies": {
     "@uidotdev/usehooks": "^2.4.1",
+    "flowbite": "^2.3.0",
+    "flowbite-react": "^0.7.2",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.50.1",
-    "react-infinite-logo-slider": "^1.0.13",
     "resend": "^3.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
-    "postcss": "^8",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
     "tailwindcss": "^3.3.0"
   }
 }
