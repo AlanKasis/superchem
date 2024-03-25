@@ -1,10 +1,31 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
-import { POST } from '@/app/api/send/route'
 
 const ContactSection = () => {
   const { register, handleSubmit } = useForm()
-  const onSubmit = (data) => POST()
+
+  const sendDataEmail = (data) => {
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/send`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json(); // Parse the response body as JSON
+    })
+    .then(data => {
+      // Handle the JSON data
+    })
+    .catch(error => {
+      console.error('There was a problem with the fetch operation:', error);
+    });
+  }
+  const onSubmit = (data) => sendDataEmail(data)
 
   return (
     <div id="contact-section" className="py-8 px-4 max-w-screen-xl w-full sm:py-16 lg:px-6 mt-6 md:mt-16 bg-gray-50 rounded-lg border border-gray-200 rounded-lg shadow m-2">
