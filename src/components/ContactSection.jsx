@@ -1,12 +1,10 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
-import { Resend } from 'resend';
-
-const resend = new Resend('re_Z6Dj9PQN_7gLMkhfQZBUBhuabgipvznDH');
+import { POST } from '@/app/api/send/route'
 
 const ContactSection = () => {
   const { register, handleSubmit } = useForm()
-  const onSubmit = (data) => console.log(data)
+  const onSubmit = (data) => POST()
 
   return (
     <div id="contact-section" className="py-8 px-4 max-w-screen-xl w-full sm:py-16 lg:px-6 mt-6 md:mt-16 bg-gray-50 rounded-lg border border-gray-200 rounded-lg shadow m-2">
