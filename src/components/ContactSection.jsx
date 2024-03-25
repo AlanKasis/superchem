@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from "react-hook-form"
 
 const ContactSection = () => {
   const { register, handleSubmit } = useForm()
+  const [success, setSuccess] = useState()
 
   const sendDataEmail = (data) => {
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/send`, {
@@ -19,7 +20,7 @@ const ContactSection = () => {
       return response.json(); // Parse the response body as JSON
     })
     .then(data => {
-      // Handle the JSON data
+      setSuccess("Formulario enviado! Nos contactaremos a la brevedad")
     })
     .catch(error => {
       console.error('There was a problem with the fetch operation:', error);
@@ -105,6 +106,7 @@ const ContactSection = () => {
             })}
           ></textarea>
           <button type="submit" className="mt-6 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Enviar</button>
+          {success && <span>{success}</span>}
         </form>
         <img src="/distillation-sketch.png" className="hidden sm:block" />
       </div>
