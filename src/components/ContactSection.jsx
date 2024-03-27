@@ -29,8 +29,8 @@ const ContactSection = () => {
   const onSubmit = (data) => sendDataEmail(data)
 
   return (
-    <div id="contact-section" className="py-8 px-4 max-w-screen-xl w-full sm:py-16 lg:px-6 mt-6 md:mt-16 bg-gray-50 rounded-lg border border-gray-200 rounded-lg shadow m-2">
-      <h1 className="text-4xl font-bold tracking-tight mb-10 text-center w-full">Contactanos</h1>
+    <div id="contact-section" className="my-8 py-8 px-4 mx-2 w-[calc(100vw-1rem-2px)] max-w-screen-xl md:mt-16 bg-gray-50 border border-gray-200 rounded-lg shadow">
+      <h1 className="text-4xl font-bold tracking-tight mb-10 text-center">Contactanos</h1>
       <div className="gap-6 flex justify-around items-center w-full">
         <form className="w-full" onSubmit={handleSubmit(onSubmit)}>
           <label htmlFor="input-group-1" className="block mb-2 text-sm font-medium text-gray-900">Nombre</label>
@@ -44,7 +44,7 @@ const ContactSection = () => {
               type="text"
               id="input-group-1"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
-              placeholder="Javier Quagliano"
+              placeholder="Juan Perez"
               {...register("fullName", { required: true, pattern: /^[A-Za-z\s]+$/i })}
             />
           </div>
@@ -60,7 +60,7 @@ const ContactSection = () => {
               type="text"
               id="input-group-1"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
-              placeholder="javier@superchem.com.ar"
+              placeholder="info@superchem.com.ar"
               {...register("mail", {
                 required: true,
                 pattern: {
@@ -76,7 +76,7 @@ const ContactSection = () => {
                 type="text"
                 id="company"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                placeholder="Superchem"
+                placeholder="Tu empresa"
                 {...register("company", {
                   required: false
                 })}

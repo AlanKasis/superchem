@@ -11,32 +11,32 @@ const MarketsSection = () => {
             <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                 <FeatureCard
                     title="Destilación de petroleo, gas y sus derivados"
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad mollitia sit ipsam ipsa molestiae obcaecati commodi, perspiciatis ut illum eius? Accusantium, architecto sequi rerum ut modi quaerat sunt vel?"
+                    description="Desarrollo de modelos de control predictivo de columnas de destilación. Modelización de Sistemas de almacenaje de Gas Natural por técnicas de adsorción y purificación / deshidratación simultánea."
                     iconUrl="/oil-rig.png"
                 />
                 <FeatureCard
                     title="Recuperación de solventes"
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad mollitia sit ipsam ipsa molestiae obcaecati commodi, perspiciatis ut illum eius? Accusantium, architecto sequi rerum ut modi quaerat sunt vel?"
+                    description="Determinación de balances de calor y masa para lograr una separación eficiente, especialmente en procesos de separacion multifásica de solventes para reacción en plantas de resinas"
                     iconUrl="/solvent.png"
                 />
                 <FeatureCard
                     title="Separación y purificación de productos químicos"
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad mollitia sit ipsam ipsa molestiae obcaecati commodi, perspiciatis ut illum eius? Accusantium, architecto sequi rerum ut modi quaerat sunt vel?"
+                    description="Consultoría en realización de purificaciones de alto grado. Acondicionamiento de agua para cumplir estandares de farmacopea"
                     iconUrl="/funnel.png"
                 />
                 <FeatureCard
                     title="Separaciones en la industria de los alimentos"
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad mollitia sit ipsam ipsa molestiae obcaecati commodi, perspiciatis ut illum eius? Accusantium, architecto sequi rerum ut modi quaerat sunt vel?"
+                    description="Exploramos métodos de separación química para mejorar la calidad y eficiencia en la producción de alimentos. Nuestro enfoque en procesos optimizados garantiza productos finales de primera calidad, cumpliendo con los más altos estándares de la industria alimentaria."
                     iconUrl="/conveyor.png"
                 />
                 <FeatureCard
                     title="Purificación de bebidas alcóholicas"
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad mollitia sit ipsam ipsa molestiae obcaecati commodi, perspiciatis ut illum eius? Accusantium, architecto sequi rerum ut modi quaerat sunt vel?"
+                    description="Estudios de factibilidad y estandarización de producto final en el proceso de destilación de bebidas alcoholicas"
                     iconUrl="/drink.png"
                 />
                 <FeatureCard
                     title="Destilación de productos vegetales para cosmética, fitoquímica y perfumería"
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad mollitia sit ipsam ipsa molestiae obcaecati commodi, perspiciatis ut illum eius? Accusantium, architecto sequi rerum ut modi quaerat sunt vel?"
+                    description="Especialización en métodos de purificación de esencias aromáticas (destilación - extracción con vapor). Estudios de factibilidad de producción de diéster en la industria del biodiesel."
                     iconUrl="/skincare.png"
                 />
             </div>
